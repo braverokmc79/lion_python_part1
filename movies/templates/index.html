@@ -1,0 +1,39 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎬 영화 추천</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2em; }
+        .movie { border: 1px solid #ccc; padding: 1em; margin-bottom: 1em; border-radius: 10px; }
+        .title { font-size: 1.5em; font-weight: bold; }
+        .genre { color: gray; }
+        .description { margin-top: 0.5em; }
+        .btn { margin-top: 1em; display: inline-block; padding: 0.5em 1em; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>⭕ 메인 페이지</h1>
+
+    <div class="movie">
+        <a href="{% url 'str_page' 'a' %}" class="btn">A 페이지</a>
+    </div>
+
+    <div class="movie">
+        <a href="{% url 'str_page' 'b' %}" class="btn">B 페이지</a>
+    </div>
+
+    <div class="movie">
+        <a href="{% url 'str_page' 'c' %}" class="btn">C 페이지</a>
+    </div>
+
+    <div class="movie">
+        <a href="{% url 'str_page' 'd' %}" class="btn">D 페이지</a>
+    </div>
+
+    <div class="movie">
+        <a href="{% url 'str_page' 'e' %}" class="btn">E 페이지</a>
+    </div>
+
+</body>
+</html>
